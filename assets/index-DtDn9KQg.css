@@ -33,8 +33,13 @@
 
   /* Hero */
   [data-loc="client/src/components/HeroSlider.tsx:34"] {
-    height: 100svh;
-    min-height: 100svh;
+    height: clamp(260px, 58vw, 420px) !important;
+    min-height: 0 !important;
+  }
+
+  [data-loc="client/src/components/HeroSlider.tsx:47"] {
+    object-fit: cover !important;
+    object-position: center center !important;
   }
 
   [data-loc="client/src/components/HeroSlider.tsx:59"] {
