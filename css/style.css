@@ -172,3 +172,66 @@
     gap: 1rem;
   }
 }
+
+
+/* ==================== TABLET HEADER FIX (768-1023px) ==================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Hide desktop nav on tablet - show hamburger menu instead */
+  #site-header nav {
+    display: none !important;
+  }
+  /* Hide phone button on tablet */
+  #site-header a[href^="tel:"] {
+    display: none !important;
+  }
+  /* Show mobile menu button on tablet */
+  #mobile-menu-btn {
+    display: block !important;
+  }
+  /* Show mobile menu panel when open on tablet */
+  #mobile-menu:not(.hidden) {
+    display: block !important;
+  }
+  /* Restore mobile menu styling on tablet */
+  #mobile-menu {
+    background-color: rgba(26, 58, 42, 0.95) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  /* Hero section - match mobile layout on tablet */
+  [data-loc="client/src/components/HeroSlider.tsx:34"] {
+    height: clamp(260px, 58vw, 420px) !important;
+    min-height: 0 !important;
+  }
+  [data-loc="client/src/components/HeroSlider.tsx:47"] {
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+  [data-loc="client/src/components/HeroSlider.tsx:59"] {
+    bottom: calc(1rem + env(safe-area-inset-bottom));
+    gap: 0.5rem;
+  }
+  [data-loc="client/src/components/HeroSlider.tsx:61"] {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+}
+
+/* Optimize nav spacing for 1024-1279px range */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  #site-header nav {
+    gap: 1rem !important;
+  }
+  #site-header nav button {
+    font-size: 12px !important;
+    letter-spacing: 0.08em !important;
+  }
+  #site-header a[href^="tel:"] {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  #site-header a[href^="tel:"] span {
+    font-size: 12px !important;
+  }
+}
