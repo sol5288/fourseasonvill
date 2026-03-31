@@ -4,40 +4,43 @@
 
 // ==================== DATA ====================
 const heroSlides = [
-  { id: 1, image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/avlZPoVyasUZfxcQ.webp", alt: "포시즌 메인 슬라이드 1" },
-  { id: 2, image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/rMZUpDVAAiAPQOen.webp", alt: "포시즌 메인 슬라이드 2" },
-  { id: 3, image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/DEpdYEzWtFOiSivd.webp", alt: "포시즌 단지배치도" }
+  { id: 1, image: "/images/hero-1.webp", alt: "포시즌 메인 슬라이드 1" },
+  { id: 2, image: "/images/hero-2.webp", alt: "포시즌 메인 슬라이드 2" },
+  { id: 3, image: "/images/hero-3.webp", alt: "포시즌 단지배치도" }
 ];
 
 const galleryItems = [
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/CTHnMcgVvRzENVZl.jpeg", category: "interior", title: "거실" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/YyYjfWRmOVivBPzd.jpeg", category: "interior", title: "주방" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/OLnJGtsjQncvKdZZ.jpg", category: "interior", title: "주방 전경" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/nbcheQaaPHLWOIdn.jpeg", category: "interior", title: "다이닝" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/eCuQvXcjwUANuUvk.jpeg", category: "interior", title: "침실" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/GUmmkjTMIBhRyUYX.jpeg", category: "interior", title: "침실 2" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/BDFKWADiEsZbzjDV.jpeg", category: "interior", title: "욕실" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/uHkBDfrbhFmfxFeP.jpeg", category: "interior", title: "욕실 2" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/HkRdEaDHzfsFgwGM.jpeg", category: "interior", title: "드레스룸" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/RdDetrUQPJzacOSx.jpeg", category: "interior", title: "복도" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/DlRtNwNiZwhncVEa.jpeg", category: "interior", title: "계단" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/BudvcpQUIPJrdGCK.jpeg", category: "interior", title: "테라스" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/KtXWkpYmxezwLuZJ.jpeg", category: "interior", title: "테라스 뷰" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/WkQhJDSORGhdGrzN.jpeg", category: "interior", title: "전망" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/xxlmQZGyQASzLjyn.jpeg", category: "interior", title: "인테리어" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/VCQeeMsGaIsNdUJE.jpeg", category: "interior", title: "인테리어 2" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/JmkgAMiVaqqdhstr.jpeg", category: "interior", title: "공간" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/jFyqvDbFglpsgxPE.jpeg", category: "interior", title: "공간 2" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/AXpNuwnZsjwMSunu.jpeg", category: "interior", title: "전경" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/gZGRnFJcfUbHPLua.jpeg", category: "exterior", title: "외관" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/jBeJwrwLrlCZVtvb.jpeg", category: "exterior", title: "외관 2" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/hyBsSeRIXSYzlkFT.jpeg", category: "exterior", title: "항공 전경" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/KPUGfJyRuJlRkfgc.jpg", category: "floorplan", title: "1층 평면도" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/aFasjcaolpZuzkEu.jpg", category: "floorplan", title: "2층 평면도" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/DEpdYEzWtFOiSivd.webp", category: "location", title: "단지배치도 1" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/JpWbWVSgYeATUuBj.webp", category: "location", title: "단지배치도 2" },
-  { src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/hgiyHaOsOgBQAoXd.webp", category: "location", title: "단지배치도 3" },
+  { src: "/images/interior-1.jpeg", category: "interior", title: "거실" },
+  { src: "/images/interior-2.jpeg", category: "interior", title: "주방" },
+  { src: "/images/interior-3.jpeg", category: "interior", title: "주방 전경" },
+  { src: "/images/interior-4.jpeg", category: "interior", title: "다이닝" },
+  { src: "/images/interior-5.jpeg", category: "interior", title: "침실" },
+  { src: "/images/interior-6.jpeg", category: "interior", title: "침실 2" },
+  { src: "/images/interior-7.jpeg", category: "interior", title: "욕실" },
+  { src: "/images/interior-8.jpeg", category: "interior", title: "욕실 2" },
+  { src: "/images/interior-9.jpeg", category: "interior", title: "드레스룸" },
+  { src: "/images/interior-10.jpeg", category: "interior", title: "복도" },
+  { src: "/images/interior-11.jpeg", category: "interior", title: "계단" },
+  { src: "/images/interior-12.jpeg", category: "interior", title: "테라스" },
+  { src: "/images/interior-13.jpeg", category: "interior", title: "테라스 뷰" },
+  { src: "/images/interior-14.jpeg", category: "interior", title: "전망" },
+  { src: "/images/interior-15.jpeg", category: "interior", title: "인테리어" },
+  { src: "/images/interior-16.jpeg", category: "interior", title: "인테리어 2" },
+  { src: "/images/interior-17.jpeg", category: "interior", title: "공간" },
+  { src: "/images/interior-18.jpeg", category: "interior", title: "공간 2" },
+  { src: "/images/interior-2-alt.jpg", category: "interior", title: "전경" },
+  { src: "/images/exterior-1.jpeg", category: "exterior", title: "외관" },
+  { src: "/images/exterior-2.jpeg", category: "exterior", title: "외관 2" },
+  { src: "/images/exterior-aerial.jpeg", category: "exterior", title: "항공 전경" },
+  { src: "/images/location-1.webp", category: "location", title: "단지배치도 1" },
+  { src: "/images/location-2.webp", category: "location", title: "단지배치도 2" },
+  { src: "/images/location-3.webp", category: "location", title: "단지배치도 3" },
   { src: "/images/interior-1-alt.jpg", category: "interior", title: "세탁실" }
+];
+
+const floorplanItems = [
+  { src: "/images/floorplan-1.jpg", title: "1층 평면도" },
+  { src: "/images/floorplan-2.jpg", title: "2층 평면도" }
 ];
 
 // ==================== STATE ====================
@@ -46,6 +49,8 @@ let heroInterval = null;
 let currentGalleryIndex = 0;
 let filteredGallery = [...galleryItems];
 let currentCategory = "all";
+let currentFloorplanIndex = 0;
+let lightboxMode = "gallery";
 
 // ==================== HERO SLIDER ====================
 let heroAnimating = false;
@@ -216,15 +221,103 @@ function filterGallery(category) {
   updateGalleryMainImage();
 }
 
+// ==================== FLOORPLAN ====================
+function renderFloorplanThumbnails() {
+  const container = document.getElementById("floorplan-thumbs");
+  container.innerHTML = "";
+
+  floorplanItems.forEach((item, index) => {
+    const btn = document.createElement("button");
+    btn.className = `flex-shrink-0 w-20 h-20 md:w-24 md:h-24 overflow-hidden transition-all duration-300 ${
+      index === currentFloorplanIndex ? "ring-2 ring-[#b8956c] opacity-100" : "opacity-50 hover:opacity-80"
+    }`;
+    btn.onclick = () => goToFloorplanImage(index);
+
+    const img = document.createElement("img");
+    img.alt = item.title;
+    img.className = "w-full h-full object-cover";
+    img.src = item.src;
+
+    btn.appendChild(img);
+    container.appendChild(btn);
+  });
+}
+
+function updateFloorplanMainImage() {
+  const img = document.getElementById("floorplan-main-img");
+  const counter = document.getElementById("floorplan-counter");
+  const item = floorplanItems[currentFloorplanIndex];
+
+  img.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+  img.style.opacity = "0";
+  img.style.transform = "scale(1.05)";
+  setTimeout(() => {
+    img.src = item.src;
+    img.alt = item.title;
+    img.style.opacity = "1";
+    img.style.transform = "scale(1)";
+  }, 500);
+
+  counter.textContent = `${currentFloorplanIndex + 1} / ${floorplanItems.length}`;
+
+  const thumbs = document.querySelectorAll("#floorplan-thumbs button");
+  thumbs.forEach((thumb, i) => {
+    if (i === currentFloorplanIndex) {
+      thumb.className = "flex-shrink-0 w-20 h-20 md:w-24 md:h-24 overflow-hidden transition-all duration-300 ring-2 ring-[#b8956c] opacity-100";
+    } else {
+      thumb.className = "flex-shrink-0 w-20 h-20 md:w-24 md:h-24 overflow-hidden transition-all duration-300 opacity-50 hover:opacity-80";
+    }
+  });
+}
+
+function goToFloorplanImage(index) {
+  currentFloorplanIndex = index;
+  updateFloorplanMainImage();
+}
+
+function floorplanPrev() {
+  currentFloorplanIndex = (currentFloorplanIndex - 1 + floorplanItems.length) % floorplanItems.length;
+  updateFloorplanMainImage();
+}
+
+function floorplanNext() {
+  currentFloorplanIndex = (currentFloorplanIndex + 1) % floorplanItems.length;
+  updateFloorplanMainImage();
+}
+
 // ==================== LIGHTBOX ====================
-function openLightbox() {
-  const lightbox = document.getElementById("lightbox");
+function updateLightboxContent() {
   const img = document.getElementById("lightbox-img");
   const counter = document.getElementById("lightbox-counter");
-  const item = filteredGallery[currentGalleryIndex];
+  let item, index, total;
+  if (lightboxMode === "gallery") {
+    item = filteredGallery[currentGalleryIndex];
+    index = currentGalleryIndex;
+    total = filteredGallery.length;
+  } else {
+    item = floorplanItems[currentFloorplanIndex];
+    index = currentFloorplanIndex;
+    total = floorplanItems.length;
+  }
   img.src = item.src;
   img.alt = item.title;
-  counter.textContent = `${currentGalleryIndex + 1} / ${filteredGallery.length}`;
+  counter.textContent = `${index + 1} / ${total}`;
+}
+
+function openGalleryLightbox() {
+  lightboxMode = "gallery";
+  updateLightboxContent();
+  showLightbox();
+}
+
+function openFloorplanLightbox() {
+  lightboxMode = "floorplan";
+  updateLightboxContent();
+  showLightbox();
+}
+
+function showLightbox() {
+  const lightbox = document.getElementById("lightbox");
   lightbox.style.display = "flex";
   requestAnimationFrame(() => {
     lightbox.style.transition = "opacity 0.3s ease";
@@ -233,13 +326,16 @@ function openLightbox() {
   document.body.style.overflow = "hidden";
 }
 
-function updateLightbox() {
-  const img = document.getElementById("lightbox-img");
-  const counter = document.getElementById("lightbox-counter");
-  const item = filteredGallery[currentGalleryIndex];
-  img.src = item.src;
-  img.alt = item.title;
-  counter.textContent = `${currentGalleryIndex + 1} / ${filteredGallery.length}`;
+function lightboxPrev() {
+  if (lightboxMode === "gallery") galleryPrev();
+  else floorplanPrev();
+  updateLightboxContent();
+}
+
+function lightboxNext() {
+  if (lightboxMode === "gallery") galleryNext();
+  else floorplanNext();
+  updateLightboxContent();
 }
 
 function closeLightbox() {
@@ -427,8 +523,8 @@ function initKeyboard() {
     const lightbox = document.getElementById("lightbox");
     if (lightbox.style.display === "flex") {
       if (e.key === "Escape") closeLightbox();
-      if (e.key === "ArrowLeft") { galleryPrev(); updateLightbox(); }
-      if (e.key === "ArrowRight") { galleryNext(); updateLightbox(); }
+      if (e.key === "ArrowLeft") lightboxPrev();
+      if (e.key === "ArrowRight") lightboxNext();
     }
   });
 }
@@ -451,6 +547,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Gallery
   renderThumbnails();
+
+  // Floorplan
+  renderFloorplanThumbnails();
+  const fpImg = document.getElementById("floorplan-main-img");
+  if (fpImg && floorplanItems.length > 0) {
+    fpImg.src = floorplanItems[0].src;
+    fpImg.alt = floorplanItems[0].title;
+  }
 
   // Header scroll
   window.addEventListener("scroll", handleHeaderScroll);

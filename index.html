@@ -41,7 +41,7 @@
           <div class="flex items-center justify-between h-20 lg:h-24">
             <!-- Logo -->
             <a href="#" class="flex items-center gap-4 group">
-              <img alt="포시즌 로고" data-loc="client/src/components/Header.tsx:61" class="h-11 lg:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/BHYtwhwAwYoDIlDf.png" />
+              <img alt="포시즌 로고" data-loc="client/src/components/Header.tsx:61" class="h-11 lg:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="/images/logo-transparent.png" />
               <div class="hidden sm:block">
                 <span class="block text-xl lg:text-2xl font-medium tracking-wide transition-colors duration-500 font-display text-white">FOUR SEASON</span>
                 <span class="block text-[10px] tracking-[0.3em] uppercase transition-colors duration-500 text-white/80">Premium Housing</span>
@@ -105,13 +105,13 @@
               <span class="text-[11px] tracking-[0.3em] uppercase text-[#8a8578]">Greeting</span>
             </div>
             <div class="w-full animate-on-scroll" style="opacity: 0; transform: translateY(30px);">
-              <img alt="인사말" class="w-full h-auto shadow-xl" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/nOuyIBhyJCnbnaAg.png" />
+              <img alt="인사말" class="w-full h-auto shadow-xl" src="/images/logo.png" />
             </div>
             <div class="pt-8 sm:pt-12 border-t border-[#e8e4de] mt-8 sm:mt-12 animate-on-scroll" style="opacity: 0; transform: translateY(20px);">
               <p class="text-[9px] sm:text-[10px] tracking-[0.2em] uppercase text-[#8a8578] mb-4 sm:mb-6">Partners</p>
               <div class="flex items-center gap-6 sm:gap-8 md:gap-12 flex-wrap">
-                <img alt="삼성ENC" class="h-10 sm:h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/xUaCpYczGAZLUdIB.png" />
-                <img alt="알마하우스" class="h-10 sm:h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/EpNdInOAKwuAYvnM.png" />
+                <img alt="삼성ENC" class="h-10 sm:h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity" src="/images/partner-logo-1.jpeg" />
+                <img alt="알마하우스" class="h-10 sm:h-12 md:h-14 object-contain opacity-80 hover:opacity-100 transition-opacity" src="/images/partner-logo-2.jpeg" />
               </div>
               <p class="text-sm sm:text-base text-[#6a6a6a] font-sans-kr mt-6 sm:mt-8 leading-relaxed">삼성ENC와 알마하우스가 함께하는 프리미엄 주거 공간. 끝임없는 도전과 혁신으로 여러분의 꿈을 실현합니다.</p>
             </div>
@@ -155,17 +155,16 @@
               <button onclick="filterGallery('all')" class="gallery-tab px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-sans-kr transition-all duration-300 whitespace-nowrap bg-[#1a3a2a] text-white" data-category="all">전체</button>
               <button onclick="filterGallery('interior')" class="gallery-tab px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-sans-kr transition-all duration-300 whitespace-nowrap bg-[#f5f4f2] text-[#6a6a6a] hover:bg-[#e8e6e2]" data-category="interior">내부</button>
               <button onclick="filterGallery('exterior')" class="gallery-tab px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-sans-kr transition-all duration-300 whitespace-nowrap bg-[#f5f4f2] text-[#6a6a6a] hover:bg-[#e8e6e2]" data-category="exterior">외부</button>
-              <button onclick="filterGallery('floorplan')" class="gallery-tab px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-sans-kr transition-all duration-300 whitespace-nowrap bg-[#f5f4f2] text-[#6a6a6a] hover:bg-[#e8e6e2]" data-category="floorplan">평면도</button>
               <button onclick="filterGallery('location')" class="gallery-tab px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-sans-kr transition-all duration-300 whitespace-nowrap bg-[#f5f4f2] text-[#6a6a6a] hover:bg-[#e8e6e2]" data-category="location">단지배치도</button>
             </div>
             <!-- Main Image Viewer -->
             <div class="relative mb-8 animate-on-scroll" style="opacity: 0; transform: translateY(30px);">
-              <div id="gallery-main" class="relative aspect-[16/10] md:aspect-[16/9] overflow-hidden bg-[#f5f4f2] cursor-pointer group" onclick="openLightbox()">
-                <img id="gallery-main-img" alt="거실" class="w-full h-full object-cover" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663328154967/CTHnMcgVvRzENVZl.jpeg" style="opacity: 1; transform: none;" />
+              <div id="gallery-main" class="relative aspect-[16/10] md:aspect-[16/9] overflow-hidden bg-[#f5f4f2] cursor-pointer group" onclick="openGalleryLightbox()">
+                <img id="gallery-main-img" alt="거실" class="w-full h-full object-cover" src="/images/interior-1.jpeg" style="opacity: 1; transform: none;" />
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path></svg>
                 </div>
-                <div id="gallery-counter" data-loc="client/src/components/GallerySlider.tsx:229" class="absolute bottom-4 right-4 px-4 py-2 bg-black/50 backdrop-blur-sm text-white text-sm font-sans-kr">1 / 28</div>
+                <div id="gallery-counter" data-loc="client/src/components/GallerySlider.tsx:229" class="absolute bottom-4 right-4 px-4 py-2 bg-black/50 backdrop-blur-sm text-white text-sm font-sans-kr">1 / 26</div>
               </div>
               <button onclick="galleryPrev()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all duration-300 group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6 text-[#1a3a2a] group-hover:text-[#b8956c] transition-colors"><path d="m15 18-6-6 6-6"></path></svg>
@@ -221,6 +220,42 @@
                 <div class="absolute -bottom-4 -right-4 w-32 h-32 border border-[#b8956c]/30 -z-10"></div>
                 <div class="absolute -top-4 -left-4 w-24 h-24 border border-[#b8956c]/20 -z-10"></div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== FLOOR PLAN ==================== -->
+        <section id="floorplan" class="py-24 md:py-32 lg:py-40 bg-white overflow-hidden">
+          <div class="container mx-auto">
+            <!-- Floorplan Header -->
+            <div class="text-center mb-16 animate-on-scroll" style="opacity: 0; transform: translateY(30px);">
+              <div class="flex items-center justify-center gap-4 mb-6">
+                <div class="w-12 h-px bg-[#b8956c]"></div>
+                <span class="text-[11px] tracking-[0.3em] uppercase text-[#8a8578]">Floor Plan</span>
+                <div class="w-12 h-px bg-[#b8956c]"></div>
+              </div>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif-kr text-[#1a3a2a] font-medium mb-3 sm:mb-4 tracking-tight">평면도</h2>
+              <p class="text-sm sm:text-base text-[#6a6a6a] font-sans-kr max-w-xl mx-auto leading-relaxed">포시즌의 세심하게 설계된 공간 구성을 확인하세요</p>
+            </div>
+            <!-- Main Image Viewer -->
+            <div class="relative mb-8 animate-on-scroll" style="opacity: 0; transform: translateY(30px);">
+              <div id="floorplan-main" class="relative aspect-[16/10] md:aspect-[16/9] overflow-hidden bg-[#f5f4f2] cursor-pointer group" onclick="openFloorplanLightbox()">
+                <img id="floorplan-main-img" alt="1층 평면도" class="w-full h-full object-cover" src="" style="opacity: 1; transform: none;" />
+                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path></svg>
+                </div>
+                <div id="floorplan-counter" class="absolute bottom-4 right-4 px-4 py-2 bg-black/50 backdrop-blur-sm text-white text-sm font-sans-kr">1 / 2</div>
+              </div>
+              <button onclick="floorplanPrev()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all duration-300 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6 text-[#1a3a2a] group-hover:text-[#b8956c] transition-colors"><path d="m15 18-6-6 6-6"></path></svg>
+              </button>
+              <button onclick="floorplanNext()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all duration-300 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-6 h-6 text-[#1a3a2a] group-hover:text-[#b8956c] transition-colors"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+            </div>
+            <!-- Thumbnails -->
+            <div id="floorplan-thumbs" class="flex gap-2 overflow-x-auto pb-4 scrollbar-hide animate-on-scroll" style="opacity: 0; transform: translateY(20px);">
+              <!-- Thumbnails will be rendered by JS -->
             </div>
           </div>
         </section>
@@ -516,10 +551,10 @@
         <button onclick="closeLightbox()" class="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors z-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-white"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </button>
-        <button onclick="galleryPrev(); updateLightbox();" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+        <button onclick="lightboxPrev()" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-8 h-8 text-white"><path d="m15 18-6-6 6-6"></path></svg>
         </button>
-        <button onclick="galleryNext(); updateLightbox();" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+        <button onclick="lightboxNext()" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-8 h-8 text-white"><path d="m9 18 6-6-6-6"></path></svg>
         </button>
         <img id="lightbox-img" class="max-w-[90vw] max-h-[85vh] object-contain" src="" alt="" />
