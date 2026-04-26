@@ -1,0 +1,23 @@
+services:
+  web:
+    image: caddy:2-alpine
+    container_name: fourseason-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN}
+      EMAIL: ${EMAIL}
+    volumes:
+      - ./index.html:/srv/index.html:ro
+      - ./css:/srv/css:ro
+      - ./js:/srv/js:ro
+      - ./images:/srv/images:ro
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

@@ -1,0 +1,29 @@
+{$DOMAIN} {
+    root * /srv
+    encode gzip zstd
+    tls {$EMAIL}
+
+    # Do not cache HTML documents
+    @htmlFiles path *.html
+    header @htmlFiles Cache-Control "no-cache, no-store, must-revalidate"
+
+    # Basic hardening headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options SAMEORIGIN
+        Referrer-Policy strict-origin-when-cross-origin
+        Permissions-Policy camera=(), microphone=(), geolocation=()
+    }
+
+    # Block dotfiles or hidden paths if accidentally mounted
+    @hiddenFiles path_regexp hidden (^|/)\.
+    respond @hiddenFiles 404
+
+    # Static asset caching
+    @staticAssets {
+        path *.css *.js *.png *.jpg *.jpeg *.gif *.webp *.svg *.ico *.woff *.woff2
+    }
+    header @staticAssets Cache-Control "public, max-age=2592000, immutable"
+
+    file_server
+}
